@@ -1,0 +1,84 @@
+.container1 {
+    display: grid;
+    grid-template-areas:
+        "head" 
+        "header"
+        "content"
+        "signup"
+        "feature1"
+        "feature2"
+        "feature3";
+}
+.head{
+    grid-area: head;
+    background-color: rgb(39, 39, 252);
+    padding: 10px;
+    text-align: center;
+}
+
+.header {
+    grid-area: header;
+    background-color: lightblue;
+    padding: 30px;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+    background-color: rgb(51, 19, 231);
+    padding: 50px;
+    text-align: center;
+}
+
+.signup {
+    grid-area: signup;
+    background-color: lightgreen;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature1 {
+    grid-area: feature1;
+   
+    background-color: rgb(243, 156, 6);
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+.feature2 {
+    grid-area: feature2;
+    
+    background-color: rgb(194, 23, 80);
+    padding: 20px;
+    text-align: center;
+}
+
+.feature3 {
+    grid-area: feature3;
+    
+    background-color: rgb(13, 215, 74);
+    padding: 20px;
+    text-align: center;
+}
+@media (min-width: 600px) {
+    .container1 {
+        grid-template-areas:
+            "head head" 
+            "header header"
+            "content content"
+            "signup feature1"
+            "feature2 feature3";
+    }
+}
+@media (min-width: 950px) {
+    .container1 {
+        grid-template-areas: 
+            "head head head"
+            "header header header"
+            "feature1 feature2 feature3"
+            "signup signup signup"
+            "content content content";
+    }
+}
